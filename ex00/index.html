@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammad Issa — a personal portfolio about networking, cybersecurity, and small web projects.">
+    <meta name="theme-color" content="#080b11">
+    <title>Mohammad Issa | Systems Console</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <span id="top" class="page-top-anchor" aria-hidden="true"></span>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="wordmark" href="#top" aria-label="Mohammad Issa home">
+                <span class="wordmark-kicker">PERSONAL SITE / JORDAN</span>
+                <span class="wordmark-name">MOHAMMAD <strong>ISSA</strong></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#about">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
+                <span class="theme-icon" aria-hidden="true">◐</span>
+                <span class="theme-label">Light mode</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Required section: About Me with a photo -->
+        <section class="hero container" id="about" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> ABOUT ME <span class="eyebrow-divider">/</span> PROFILE 001</p>
+                <h1 id="hero-title">Mohammad<br><span>Issa.</span></h1>
+                <p class="hero-lead">Cybersecurity &amp; networking. <span>CCNA certified.</span></p>
+                <p class="hero-description">I like exploring how networks work, learning the basics of defensive security, and building small things for the web. This is a place to share what I’m practising and the projects I make along the way.</p>
+                <div class="hero-actions">
+                    <a class="action-link action-primary" href="#projects">View projects <span aria-hidden="true">↘</span></a>
+                    <a class="action-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-facts" aria-label="A few details">
+                    <div><span>CERTIFICATION</span><strong>CCNA</strong></div>
+                    <div><span>BASED IN</span><strong>Jordan</strong></div>
+                </div>
+            </div>
+
+            <aside class="profile-panel" aria-label="Profile photo and profile details">
+                <div class="panel-topline"><span>PROFILE IMAGE</span><span>FIG. 01</span></div>
+                <div class="portrait-frame">
+                    <div class="portrait-grid" aria-hidden="true"></div>
+                    <img class="profile-image" src="assets/profile.jpg" alt="Profile photo" loading="eager">
+                    <span class="image-coordinate coordinate-top">31° 57′ N</span>
+                    <span class="image-coordinate coordinate-bottom">JORDAN / 001</span>
+                </div>
+                <div class="profile-panel-footer">
+                    <div><span class="panel-label">CURRENT FOCUS</span><strong>Networks &amp; defensive security</strong></div>
+                    <span class="availability-mark"><i aria-hidden="true"></i> OPEN TO LEARNING</span>
+                </div>
+            </aside>
+        </section>
+
+
+        <!-- Required section: Skills grid -->
+        <section class="section container" id="skills" aria-labelledby="skills-heading">
+            <div class="section-identity skills-identity">
+                <span class="section-number">01</span>
+                <span class="section-rule" aria-hidden="true"></span>
+                <span class="section-code">WHAT I EXPLORE</span>
+                <span class="eyebrow skills-eyebrow">THINGS I’M LEARNING</span>
+            </div>
+            <div class="section-content">
+                <div class="section-heading-row">
+                    <div><h2 id="skills-heading">Skills &amp; <span>tools.</span></h2></div>
+                    <p class="section-summary">A few tools and topics I enjoy learning about and practising.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-card-top"><span class="skill-index">SK / 01</span><span class="skill-symbol" aria-hidden="true">↔</span></div>
+                        <h3>Networking</h3>
+                        <p>Routing and switching, VLANs, IPv4 addressing, subnetting, and first-line network troubleshooting.</p>
+                        <div class="tag-list"><span>CCNA</span><span>TCP/IP</span><span>Packet Tracer</span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-card-top"><span class="skill-index">SK / 02</span><span class="skill-symbol" aria-hidden="true">⌁</span></div>
+                        <h3>Cybersecurity</h3>
+                        <p>Security fundamentals, basic log analysis, introductory SIEM concepts, digital forensics fundamentals, and packet inspection.</p>
+                        <div class="tag-list"><span>TryHackMe</span><span>SIEM basics</span><span>Wireshark</span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-card-top"><span class="skill-index">SK / 03</span><span class="skill-symbol" aria-hidden="true">&lt;/&gt;</span></div>
+                        <h3>Web technologies</h3>
+                        <p>Building semantic pages, responsive layouts, and small browser interactions. Familiar with Python and Flask through a university project.</p>
+                        <div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python / Flask</span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-card-top"><span class="skill-index">SK / 04</span><span class="skill-symbol" aria-hidden="true">$_</span></div>
+                        <h3>Tools &amp; workflow</h3>
+                        <p>Using a Linux terminal, organising repositories, tracking changes, and documenting project work clearly.</p>
+                        <div class="tag-list"><span>Kali Linux</span><span>Git</span><span>GitHub</span></div>
+                    </article>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Required section: Project Showcase including Projects 00–03 -->
+        <section class="projects-section" id="projects" aria-labelledby="projects-heading">
+            <div class="container section-layout">
+                <div class="section-identity">
+                    <span class="section-number">02</span>
+                    <span class="section-rule" aria-hidden="true"></span>
+                    <span class="section-code">THINGS I’VE MADE</span>
+                </div>
+                <div class="section-content">
+                    <div class="section-heading-row">
+                        <div><p class="eyebrow">A FEW SMALL BUILDS</p><h2 id="projects-heading">Projects <span>&amp; experiments.</span></h2></div>
+                        <p class="section-summary">Small projects and exercises from learning web development and working with Git.</p>
+                    </div>
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <div class="project-card-top"><span class="project-index">00</span><span class="project-category">VERSION CONTROL</span></div>
+                            <h3>Git Foundations</h3>
+                            <p>Organised exercise folders, tracked work through commits, documented the repository, and pushed the required files to GitHub.</p>
+                            <div class="tag-list"><span>Git</span><span>GitHub</span><span>README</span></div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card-top"><span class="project-index">01</span><span class="project-category">HTML STRUCTURE</span></div>
+                            <h3>HTML5 Fundamentals</h3>
+                            <p>Built pages with semantic elements, clear heading hierarchy, links, lists, tables, images, and form controls.</p>
+                            <div class="tag-list"><span>HTML5</span><span>Semantics</span><span>Forms</span></div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card-top"><span class="project-index">02</span><span class="project-category">LAYOUT &amp; DESIGN</span></div>
+                            <h3>CSS Layout Lab</h3>
+                            <p>Practised Flexbox, positioning, the box model, colors, shapes, responsive layouts, and hover interactions.</p>
+                            <div class="tag-list"><span>CSS3</span><span>Flexbox</span><span>Media queries</span></div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card-top"><span class="project-index">03</span><span class="project-category">INTERACTION</span></div>
+                            <h3>JavaScript Basics</h3>
+                            <p>Worked with variables and types, console output, click events, event listeners, and simple DOM updates.</p>
+                            <div class="tag-list"><span>JavaScript</span><span>DOM</span><span>Events</span></div>
+                        </article>
+                        <article class="project-card project-card-featured" id="phishguard">
+                            <div class="project-card-top"><span class="project-index">04</span><span class="project-category">FEATURED · SECURITY</span></div>
+                            <h3>PhishGuard<span class="project-title-dot">.</span></h3>
+                            <p>A university project exploring phishing detection in a Flask web app. Machine-learning models assess suspicious URLs and email content, with login and report-summary features.</p>
+                            <div class="tag-list"><span>Python</span><span>Flask</span><span>Machine Learning</span></div>
+                            <a class="project-card-link" href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Required section: Hobbies -->
+        <section class="section hobbies-section" id="hobbies" aria-labelledby="hobbies-heading">
+            <div class="container section-layout">
+                <div class="section-identity">
+                    <span class="section-number">03</span>
+                    <span class="section-rule" aria-hidden="true"></span>
+                    <span class="section-code">OFF THE CHECKLIST</span>
+                </div>
+                <div class="section-content">
+                    <div class="section-heading-row">
+                        <div><p class="eyebrow">OUTSIDE THE CHECKLIST</p><h2 id="hobbies-heading">What I enjoy <span>exploring.</span></h2></div>
+                        <p class="section-summary">A few things I come back to when I want to learn or try something new.</p>
+                    </div>
+                    <div class="hobbies-list">
+                        <article class="hobby-row"><span class="hobby-index">H / 01</span><div><h3>Cybersecurity learning labs</h3><p>Revisiting security fundamentals, working through structured exercises, and learning how to read logs and network traffic.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
+                        <article class="hobby-row"><span class="hobby-index">H / 02</span><div><h3>Network configuration &amp; troubleshooting</h3><p>Reviewing CCNA topics and using lab scenarios to understand how addressing, routing, and switching fit together.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
+                        <article class="hobby-row"><span class="hobby-index">H / 03</span><div><h3>Building small web projects</h3><p>Practising HTML, CSS, and JavaScript, then improving a page based on what I learn.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Required section: Contact Form -->
+        <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+            <div class="container contact-layout">
+                <div class="contact-copy">
+                    <div class="section-identity contact-identity"><span class="section-number">04</span><span class="section-rule" aria-hidden="true"></span><span class="section-code">CONTACT</span></div>
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2 id="contact-heading">Let’s talk<br><span>technical work.</span></h2>
+                    <p>Have a question, an idea, or want to talk about technology? Feel free to reach out.</p>
+                    <a class="contact-link" href="mailto:your.email@example.com">your.email@example.com <span aria-hidden="true">↗</span></a>
+                    <a class="contact-link" href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer">github.com/mohammadissa02 <span aria-hidden="true">↗</span></a>
+                    <p class="replace-note">Remember to replace the example email before publishing.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-header"><span>MESSAGE FORM / 001</span><span class="demo-status"><i aria-hidden="true"></i> FRONT-END DEMO</span></div>
+                    <div class="form-field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required minlength="2"></div>
+                    <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+                    <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="10"></textarea></div>
+                    <button class="submit-button" type="submit">Check message <span aria-hidden="true">↗</span></button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                    <p class="form-note">The form checks your inputs in the browser. It does not send or store messages.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Required section: Footer -->
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <a class="footer-wordmark" href="#top">MOHAMMAD <strong>ISSA</strong></a>
+            <p>Networking · Cybersecurity · Web projects</p>
+            <div class="footer-links"><a href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="mailto:your.email@example.com">EMAIL ↗</a></div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="current-year">2026</span> MOHAMMAD ISSA</p>
+            <a class="back-to-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+</body>
+</html>
