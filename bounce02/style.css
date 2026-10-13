@@ -59,7 +59,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .container { width: min(1180px, calc(100% - 56px)); margin-inline: auto; }
 .page-top-anchor { display: block; height: 0; scroll-margin-top: 0; }
 
-/* Navigation */
+
 .site-header {
     position: sticky;
     top: 0;
@@ -104,7 +104,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .theme-toggle:hover { background: var(--blue-soft); border-color: var(--blue-hover); }
 .theme-icon { color: var(--blue-hover); font-size: 16px; line-height: 1; }
 
-/* About Me / hero with photo */
+
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.16fr) minmax(300px, .84fr);
@@ -199,7 +199,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .availability-mark { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font: 8px "SFMono-Regular", Consolas, monospace; letter-spacing: .07em; }
 .availability-mark i { width: 6px; height: 6px; background: #6b91cf; border-radius: 50%; }
 
-/* Section layout and headings */
+
 .section { padding-block: 76px 84px; }
 .background-section, .hobbies-section { padding-block: 76px 84px; background: var(--raised); border-block: 1px solid var(--border); }
 .section-layout, .background-layout { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 25px; }
@@ -218,7 +218,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .section-heading-row h2 span { color: var(--blue-hover); }
 .section-summary { max-width: 320px; margin: 0 0 4px; color: var(--muted); font: 11px/1.9 "SFMono-Regular", Consolas, monospace; }
 
-/* Education and training records */
+
 .background-records { border-top: 1px solid var(--border); }
 .background-record { display: grid; grid-template-columns: 155px minmax(0, 1fr) auto; align-items: center; gap: 18px; padding: 19px 16px; border-bottom: 1px solid var(--border); transition: background .15s ease; }
 .background-record:hover { background: var(--blue-soft); }
@@ -227,7 +227,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .background-record p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .record-status { padding: 5px 7px; border: 1px solid var(--border); color: var(--blue-hover); font-size: 8px; white-space: nowrap; }
 
-/* Required skills grid */
 .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .skill-card { min-width: 0; padding: 22px; background: var(--panel); border: 1px solid var(--border); box-shadow: 0 10px 25px rgba(0, 0, 0, .04); transition: border-color .18s ease, transform .18s ease, background .18s ease; }
 .skill-card:hover { transform: translateY(-3px); border-color: var(--border-strong); background: var(--panel-alt); }
@@ -241,7 +240,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .honesty-note { display: flex; align-items: flex-start; gap: 9px; margin: 16px 0 0; color: var(--faint); font-size: 10px; line-height: 1.8; }
 .honesty-note span { display: grid; place-items: center; flex: 0 0 16px; width: 16px; height: 16px; border: 1px solid var(--border-strong); color: var(--blue-hover); font: 10px monospace; }
 
-/* Project showcase */
+
 .projects-section { padding-block: 44px 48px; border-block: 1px solid var(--border); }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .project-card { display: flex; flex-direction: column; min-width: 0; min-height: 190px; padding: 14px; border: 1px solid var(--border); background: var(--panel); transition: border-color .18s ease, transform .18s ease; }
@@ -293,7 +292,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .featured-project-bottom { padding-top: 13px; border-top: 1px solid rgba(255, 255, 255, .28); }
 .project-note { margin: 13px 0 0; color: var(--faint); font-size: 9px; line-height: 1.8; }
 
-/* Hobbies */
+
 .hobbies-list { border-top: 1px solid var(--border); }
 .hobby-row { display: grid; grid-template-columns: 95px minmax(0, 1fr) 20px; align-items: center; gap: 18px; padding: 20px 14px; border-bottom: 1px solid var(--border); transition: background .15s ease; }
 .hobby-row:hover { background: var(--blue-soft); }
@@ -302,7 +301,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hobby-row p { max-width: 720px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .hobby-arrow { color: var(--blue-hover); font-size: 17px; }
 
-/* Contact form and footer */
+
 .contact-section { padding-block: 78px; border-top: 1px solid var(--border); background: var(--panel); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 66px); align-items: start; }
 .contact-identity { flex-direction: row; align-items: center; gap: 11px; margin-bottom: 34px; }
@@ -461,7 +460,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 
-/* Bounce 02 — language switcher and RTL support */
+
 .language-toggle {
     flex: 0 0 auto;
     border: 1px solid var(--border-strong);
@@ -512,7 +511,7 @@ html[dir="rtl"] .coordinate-bottom { right: auto; left: 12px; }
 }
 html[lang="ar"] .hero-copy::before { content: "ملف المستخدم // 001"; letter-spacing: 0; }
 
-/* Arabic: keep both name parts on one line and move the freed line space to the end of the bio. */
+
 html[lang="ar"] #hero-title br { display: none; }
 html[lang="ar"] #hero-title { min-height: 0; }
 html[lang="ar"] #hero-title [data-i18n="name.lastPeriod"] { margin-inline-start: 0.18em; }
