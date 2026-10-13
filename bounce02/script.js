@@ -30,10 +30,11 @@ const translations = {
         'contact.description': 'Have a question, an idea, or want to talk about technology? Feel free to reach out.', 'contact.emailNote': 'Remember to replace the example email before publishing.',
         'contact.email': 'My Email',
         'contact.github': 'My GitHub',
+        'contact.linkedin': 'My LinkedIn',
         'form.header': 'MESSAGE FORM / 001', 'form.demo': '', 'form.name': 'Name', 'form.namePlaceholder': 'Your name', 'form.email': 'Email address', 'form.emailPlaceholder': 'you@example.com',
         'form.message': 'Message', 'form.messagePlaceholder': 'Write your message here...', 'form.submit': 'Check message', 'form.note': 'The form checks your inputs in the browser. It does not send or store messages.',
         'form.success': 'Thanks, {name}. The form passed the browser-side checks, but this demo does not send messages.',
-        'footer.summary': 'Networking · Cybersecurity · Web projects', 'footer.github': 'GITHUB ↗', 'footer.email': 'EMAIL ↗', 'footer.backToTop': 'top',
+        'footer.summary': 'Networking · Cybersecurity · Web projects', 'footer.linkedin' : 'LinkedIn ↗' ,'footer.github': 'GITHUB ↗', 'footer.email': 'EMAIL ↗', 'footer.backToTop': 'top',
         'aria.navigation': 'Main navigation', 'aria.home': 'Mohammad Issa home', 'aria.facts': 'A few details', 'aria.profile': 'Profile photo and profile details',
         'document.title': 'Mohammad Issa', 'document.description': 'Mohammad Issa — a personal portfolio about networking, cybersecurity, and small web projects.'
     },
@@ -67,10 +68,11 @@ const translations = {
         'contact.description': 'هل لديك سؤال أو فكرة أو ترغب في الحديث عن التقنية؟ يسعدني تواصلك.', 'contact.emailNote': 'تذكّر استبدال البريد الإلكتروني التجريبي قبل نشر الموقع.',
         'contact.email': 'بريدي الإلكتروني',
         'contact.github': 'حسابي على GitHub',
+        'contact.linkedin': ' حسابي على LinkedIn',
         'form.header': 'نموذج رسالة / 001', 'form.demo': '', 'form.name': 'الاسم', 'form.namePlaceholder': 'اكتب اسمك', 'form.email': 'البريد الإلكتروني', 'form.emailPlaceholder': 'you@example.com',
         'form.message': 'الرسالة', 'form.messagePlaceholder': 'اكتب رسالتك هنا...', 'form.submit': 'تحقّق من الرسالة', 'form.note': 'يتحقق النموذج من المدخلات في المتصفح فقط، ولا يرسل الرسائل أو يخزنها.',
         'form.success': 'شكرًا {name}. اجتازت الرسالة التحقق داخل المتصفح، لكن هذا النموذج التجريبي لا يرسل الرسائل.',
-        'footer.summary': 'الشبكات · الأمن السيبراني · مشاريع الويب', 'footer.github': 'GITHUB ↗', 'footer.email': 'البريد ↗', 'footer.backToTop': 'فوق',
+        'footer.summary': 'الشبكات · الأمن السيبراني · مشاريع الويب', 'footer.linkedin' : 'LinkedIn ↗' ,'footer.github': 'GITHUB ↗', 'footer.email': 'البريد ↗', 'footer.backToTop': 'فوق',
         'aria.navigation': 'التنقّل الرئيسي', 'aria.home': 'الصفحة الرئيسية لمحمد عيسى', 'aria.facts': 'بعض المعلومات', 'aria.profile': 'الصورة الشخصية ومعلومات الملف',
         'document.title': 'محمد عيسى', 'document.description': 'محمد عيسى — ملف شخصي عن الشبكات والأمن السيبراني ومشاريع الويب الصغيرة.'
     }
