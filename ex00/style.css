@@ -1,4 +1,3 @@
-/* SYSTEMS CONSOLE — black / deep blue, plain CSS only */
 :root {
     color-scheme: dark;
     --page: #080b11;
@@ -59,7 +58,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .container { width: min(1180px, calc(100% - 56px)); margin-inline: auto; }
 .page-top-anchor { display: block; height: 0; scroll-margin-top: 0; }
 
-/* Navigation */
 .site-header {
     position: sticky;
     top: 0;
@@ -86,6 +84,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .nav-links { display: flex; align-items: center; gap: clamp(12px, 1.8vw, 24px); }
 .nav-links a { color: var(--muted); font-size: 10px; transition: color .15s ease; }
 .nav-links a:hover { color: var(--text); }
+.nav-controls { display: inline-flex; align-items: stretch; gap: 0; flex: 0 0 auto; }
+.nav-controls button { min-height: 38px; }
 .theme-toggle {
     flex: 0 0 auto;
     display: inline-flex;
@@ -102,7 +102,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .theme-toggle:hover { background: var(--blue-soft); border-color: var(--blue-hover); }
 .theme-icon { color: var(--blue-hover); font-size: 16px; line-height: 1; }
 
-/* About Me / hero with photo */
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.16fr) minmax(300px, .84fr);
@@ -136,6 +135,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .eyebrow-divider { color: var(--faint); }
 .hero h1 { margin: 0; font-size: clamp(56px, 6.8vw, 91px); font-weight: 900; letter-spacing: -.075em; line-height: .91; text-transform: uppercase; }
 .hero h1 span { color: var(--blue-hover); }
+.hero h1 .hero-name-first { color: inherit; }
 .hero-lead { max-width: 580px; margin: 25px 0 12px; font-size: clamp(16px, 1.7vw, 20px); line-height: 1.5; font-weight: 750; }
 .hero-lead span { color: var(--blue-hover); }
 .hero-description { max-width: 620px; margin: 0 0 12px; color: var(--muted); font-size: 13px; line-height: 1.9; }
@@ -168,9 +168,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     inset: 0;
     z-index: 1;
     pointer-events: none;
-    background-image:
-        linear-gradient(rgba(100, 137, 192, .08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(100, 137, 192, .08) 1px, transparent 1px);
     background-size: 27px 27px;
     mix-blend-mode: screen;
 }
@@ -199,7 +196,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .availability-mark { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font: 8px "SFMono-Regular", Consolas, monospace; letter-spacing: .07em; }
 .availability-mark i { width: 6px; height: 6px; background: #6b91cf; border-radius: 50%; }
 
-/* Section layout and headings */
 .section { padding-block: 76px 84px; }
 .background-section, .hobbies-section { padding-block: 76px 84px; background: var(--raised); border-block: 1px solid var(--border); }
 .section-layout, .background-layout { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 25px; }
@@ -218,7 +214,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .section-heading-row h2 span { color: var(--blue-hover); }
 .section-summary { max-width: 320px; margin: 0 0 4px; color: var(--muted); font: 11px/1.9 "SFMono-Regular", Consolas, monospace; }
 
-/* Education and training records */
 .background-records { border-top: 1px solid var(--border); }
 .background-record { display: grid; grid-template-columns: 155px minmax(0, 1fr) auto; align-items: center; gap: 18px; padding: 19px 16px; border-bottom: 1px solid var(--border); transition: background .15s ease; }
 .background-record:hover { background: var(--blue-soft); }
@@ -227,7 +222,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .background-record p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .record-status { padding: 5px 7px; border: 1px solid var(--border); color: var(--blue-hover); font-size: 8px; white-space: nowrap; }
 
-/* Required skills grid */
 .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .skill-card { min-width: 0; padding: 22px; background: var(--panel); border: 1px solid var(--border); box-shadow: 0 10px 25px rgba(0, 0, 0, .04); transition: border-color .18s ease, transform .18s ease, background .18s ease; }
 .skill-card:hover { transform: translateY(-3px); border-color: var(--border-strong); background: var(--panel-alt); }
@@ -241,7 +235,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .honesty-note { display: flex; align-items: flex-start; gap: 9px; margin: 16px 0 0; color: var(--faint); font-size: 10px; line-height: 1.8; }
 .honesty-note span { display: grid; place-items: center; flex: 0 0 16px; width: 16px; height: 16px; border: 1px solid var(--border-strong); color: var(--blue-hover); font: 10px monospace; }
 
-/* Project showcase */
 .projects-section { padding-block: 44px 48px; border-block: 1px solid var(--border); }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .project-card { display: flex; flex-direction: column; min-width: 0; min-height: 190px; padding: 14px; border: 1px solid var(--border); background: var(--panel); transition: border-color .18s ease, transform .18s ease; }
@@ -251,17 +244,67 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .project-category { color: var(--faint); font-size: 7px; text-align: right; }
 .project-card h3 { margin: 0 0 7px; font-size: 16px; line-height: 1.2; letter-spacing: -.035em; }
 .project-card p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.6; }
-.project-card .tag-list { margin-top: auto; padding-top: 10px; gap: 4px; }
-.project-card .tag-list span { padding: 4px 5px; }
+
+/* Tags stay along the bottom; the repository link is pinned to the right. */
+.project-card-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 14px;
+    direction: ltr;
+}
+.project-card-footer .tag-list {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    min-width: 0;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    color: var(--faint);
+    font-size: 8px;
+}
+.project-card-footer .tag-list span { padding: 4px 5px; }
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    gap: 12px;
+    width: fit-content;
+    margin: 0 0 0 auto;
+    padding: 7px 10px;
+    border: 1px solid var(--border-strong);
+    background: var(--raised);
+    color: var(--text);
+    font: 9px "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+.project-link:hover { border-color: var(--blue-hover); background: var(--blue-soft); }
+.project-link:focus-visible { outline: 2px solid #6b97d4; outline-offset: 3px; }
+.project-link .project-link-label-en,
+.project-link .project-link-label-ar { color: var(--text); font: inherit; }
+.project-link .project-link-label-ar { display: none; }
+.project-link .project-link-arrow { color: var(--blue-hover); font-size: 14px; line-height: 1; }
+html[lang="ar"] .project-link .project-link-label-en { display: none; }
+html[lang="ar"] .project-link .project-link-label-ar { display: inline; }
+
+/* Featured PhishGuard card: project details first, tags and status at the bottom. */
 .project-card-featured {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: minmax(175px, .8fr) minmax(250px, 1.35fr) minmax(190px, .9fr);
+    grid-template-columns: minmax(175px, .8fr) minmax(250px, 1.35fr);
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: "top top top" "title description tags" ". . link";
+    grid-template-areas: "top top" "title description" "footer footer";
     align-items: center;
     gap: 8px 24px;
-    min-height: 136px;
+    min-height: 156px;
     padding: 15px 20px;
     border-color: rgba(104, 157, 226, .7);
     background: linear-gradient(135deg, #28528e, #1b3760);
@@ -270,18 +313,43 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .project-card-featured .project-card-top { grid-area: top; margin-bottom: 0; }
 .project-card-featured h3 { grid-area: title; align-self: center; margin: 0; font-size: clamp(26px, 2.5vw, 36px); }
-.project-card-featured p { grid-area: description; }
-.project-card-featured .tag-list { grid-area: tags; align-self: center; margin: 0; padding: 0; }
-.project-card-featured .project-card-link { grid-area: link; align-self: start; justify-self: start; margin-top: 0; }
-.project-card-featured:hover { border-color: #9cc4f5; }
-.project-card-featured .project-index { border-color: rgba(255,255,255,.35); background: rgba(255,255,255,.12); color: #fff; }
-.project-card-featured .project-category { color: rgba(255,255,255,.76); }
-.project-card-featured p { color: rgba(255,255,255,.9); }
+.project-card-featured p { grid-area: description; color: rgba(255,255,255,.9); }
+.project-card-featured .project-card-footer { grid-area: footer; align-items: center; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.22); }
 .project-card-featured .project-title-dot { color: #a9c9f6; }
-.project-card-featured .tag-list { color: #e3edfb; }
-.project-card-featured .tag-list span { border-color: rgba(255,255,255,.25); background: rgba(255,255,255,.09); }
-.project-card-link { display: inline-flex; align-items: center; gap: 8px; width: fit-content; margin-top: 11px; padding-bottom: 2px; border-bottom: 1px solid rgba(255,255,255,.45); font: 9px "SFMono-Regular", Consolas, monospace; text-transform: uppercase; }
-.project-card-link span { font-size: 13px; }
+.project-card-featured .project-category { color: rgba(255,255,255,.76); }
+.project-card-featured .project-index { border-color: rgba(255,255,255,.35); background: rgba(255,255,255,.12); color: #fff; }
+.project-card-featured .project-card-footer .tag-list { color: #e3edfb; }
+.project-card-featured .project-card-footer .tag-list span { border-color: rgba(255,255,255,.25); background: rgba(255,255,255,.09); }
+.project-status-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    gap: 8px;
+    margin-left: auto;
+    padding: 7px 10px;
+    border: 1px solid rgba(255,255,255,.45);
+    background: rgba(255,255,255,.08);
+    color: #fff;
+    font: 9px "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: default;
+}
+.project-status-label .project-status-label-en { display: inline; color: #fff; font: inherit; }
+.project-status-label .project-status-label-ar { display: none; color: #fff; font: inherit; }
+html[lang="ar"] .project-status-label .project-status-label-en { display: none; }
+html[lang="ar"] .project-status-label .project-status-label-ar { display: inline; }
+.project-status-label::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    flex: 0 0 6px;
+    border-radius: 50%;
+    background: #c9ddfb;
+}
+.project-card-featured:hover { border-color: #9cc4f5; }
 .featured-project { margin-top: 15px; padding: clamp(20px, 3vw, 30px); border: 1px solid var(--border-strong); background: linear-gradient(125deg, var(--blue), #1b3760); color: #fff; box-shadow: var(--shadow); }
 .featured-project-top, .featured-project-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px 18px; color: rgba(255, 255, 255, .75); font-size: 9px; }
 .featured-project-body { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: end; gap: 33px; padding: 30px 0; }
@@ -294,7 +362,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .featured-project-bottom { padding-top: 13px; border-top: 1px solid rgba(255, 255, 255, .28); }
 .project-note { margin: 13px 0 0; color: var(--faint); font-size: 9px; line-height: 1.8; }
 
-/* Hobbies */
 .hobbies-list { border-top: 1px solid var(--border); }
 .hobby-row { display: grid; grid-template-columns: 95px minmax(0, 1fr) 20px; align-items: center; gap: 18px; padding: 20px 14px; border-bottom: 1px solid var(--border); transition: background .15s ease; }
 .hobby-row:hover { background: var(--blue-soft); }
@@ -303,7 +370,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hobby-row p { max-width: 720px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .hobby-arrow { color: var(--blue-hover); font-size: 17px; }
 
-/* Contact form and footer */
 .contact-section { padding-block: 78px; border-top: 1px solid var(--border); background: var(--panel); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 66px); align-items: start; }
 .contact-identity { flex-direction: row; align-items: center; gap: 11px; margin-bottom: 34px; }
@@ -338,15 +404,38 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .footer-links a:hover { color: var(--blue-hover); }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 13px; border-top: 1px solid var(--border); color: var(--faint); font-size: 8px; }
 .footer-bottom p { margin: 0; }
-.back-to-top { display: inline-flex; align-items: center; gap: 10px; color: var(--text); }
-.back-to-top span { display: grid; place-items: center; width: 27px; height: 27px; background: var(--blue); color: #fff; font-size: 15px; transition: background .15s ease; }
-.back-to-top:hover span { background: var(--blue-hover); }
+.back-to-top {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 4px;
+    padding-inline-start: 12px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+    font: 9px "SFMono-Regular", Consolas, monospace;
+    letter-spacing: .075em;
+    transition: border-color .15s ease, background .15s ease;
+}
+.back-to-top span {
+    display: grid;
+    place-items: center;
+    flex: 0 0 29px;
+    width: 29px;
+    height: 29px;
+    background: var(--blue);
+    color: #fff;
+    font-size: 16px;
+    transition: background .15s ease, transform .15s ease;
+}
+.back-to-top:hover { border-color: var(--border-strong); background: var(--blue-soft); }
+.back-to-top:hover span { background: var(--blue-hover); transform: translateY(-1px); }
 
 @media (max-width: 1050px) {
     .project-card-featured {
         grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr);
         grid-template-rows: auto 1fr auto;
-        grid-template-areas: "top top" "title description" "tags link";
+        grid-template-areas: "top top" "title description" "footer footer";
         gap: 9px 18px;
     }
     .navbar { flex-wrap: wrap; gap: 15px 22px; padding-block: 12px; }
@@ -398,7 +487,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     .wordmark-name { font-size: 15px; }
     .nav-links { grid-column: 1 / -1; order: initial; justify-content: flex-start; gap: 17px; overflow-x: auto; padding: 3px 1px 7px; }
     .nav-links a { white-space: nowrap; font-size: 9px; }
-    .theme-toggle { grid-column: 2; grid-row: 1; padding: 8px 9px; font-size: 9px; }
+    .theme-toggle { padding: 8px 9px; font-size: 9px; }
     .hero { padding-top: 17px; }
     .hero-copy { padding: 27px 18px 21px; }
     .hero-copy::before { top: 12px; right: 12px; font-size: 7px; }
@@ -418,7 +507,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     .project-card { min-height: 0; padding: 17px; }
     .project-card-featured { display: flex; grid-column: auto; }
     .project-card-featured h3 { font-size: 28px; }
-    .project-card .tag-list { margin-top: 14px; padding-top: 0; }
+    .project-card .project-card-footer .tag-list { margin-top: 0; padding-top: 0; }
     .featured-project-top, .featured-project-bottom { font-size: 8px; }
     .featured-project h3 { font-size: 48px; }
     .hobby-row { grid-template-columns: 1fr 18px; gap: 9px 12px; padding: 17px 8px; }
@@ -437,3 +526,79 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+.language-toggle {
+    flex: 0 0 auto;
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--blue-hover);
+    padding: 9px 11px;
+    margin-inline-end: -1px;
+    font: 10px "SFMono-Regular", Consolas, monospace;
+    cursor: pointer;
+    transition: background .15s ease, border-color .15s ease;
+}
+.language-toggle:hover { background: var(--blue-soft); border-color: var(--blue-hover); }
+html[dir="rtl"] body { text-align: right; }
+html[dir="rtl"] .navbar { direction: rtl; }
+html[dir="rtl"] .nav-links { direction: rtl; }
+html[dir="rtl"] .wordmark { align-items: flex-start; }
+html[dir="rtl"] .hero-copy { align-items: flex-start; }
+html[dir="rtl"] .hero-copy::before { right: auto; left: 19px; }
+html[dir="rtl"] .hero h1 { letter-spacing: 0; line-height: 1.15; }
+html[dir="rtl"] .hero-facts, html[dir="rtl"] .skills-grid, html[dir="rtl"] .project-grid { direction: rtl; }
+html[dir="rtl"] .section-layout { direction: rtl; }
+html[dir="rtl"] .section-identity { align-items: flex-start; }
+html[dir="rtl"] .skills-identity, html[dir="rtl"] .contact-identity { flex-direction: row; }
+html[dir="rtl"] .skills-eyebrow { margin: 0 8px 0 0; }
+html[dir="rtl"] .section-heading-row { direction: rtl; }
+html[dir="rtl"] .section-heading-row h2 { letter-spacing: 0; line-height: 1.2; }
+html[dir="rtl"] .section-summary { text-align: right; }
+html[dir="rtl"] .skill-card-top, html[dir="rtl"] .project-card-top { direction: rtl; }
+html[dir="rtl"] .project-category { text-align: left; }
+html[dir="rtl"] .project-card-featured { direction: rtl; grid-template-areas: "top top" "description title" "footer footer"; }
+html[dir="rtl"] .hobby-row { direction: rtl; grid-template-columns: 95px minmax(0, 1fr) 20px; }
+html[dir="rtl"] .hobby-arrow { transform: scaleX(-1); }
+html[dir="rtl"] .contact-layout, html[dir="rtl"] .footer-main, html[dir="rtl"] .footer-bottom { direction: rtl; }
+html[dir="rtl"] .form-header { direction: rtl; }
+html[dir="rtl"] .form-field input, html[dir="rtl"] .form-field textarea { text-align: right; direction: rtl; }
+html[dir="rtl"] .footer-links { direction: rtl; }
+html[dir="rtl"] .back-to-top { flex-direction: row-reverse; }
+html[dir="rtl"] .coordinate-top { left: auto; right: 12px; }
+html[dir="rtl"] .coordinate-bottom { right: auto; left: 12px; }
+@media (max-width: 1050px) {
+    html[dir="rtl"] .project-card-featured { grid-template-areas: "top top" "description title" "footer footer"; }
+}
+@media (max-width: 500px) {
+    .nav-controls { grid-column: 2; grid-row: 1; }
+    html[dir="rtl"] .nav-links { justify-content: flex-start; }
+    html[dir="rtl"] .project-card-featured { grid-template-areas: none; }
+    html[dir="rtl"] .hobby-row { grid-template-columns: 1fr 18px; }
+}
+html[lang="ar"] .hero-copy::before { content: "ملف المستخدم // 001"; letter-spacing: 0; }
+
+html[lang="ar"] #hero-title br { display: none; }
+html[lang="ar"] #hero-title { min-height: 0; }
+html[lang="ar"] #hero-title [data-i18n="name.lastPeriod"] { margin-inline-start: 0.18em; }
+html[lang="ar"] .hero-lead { margin-bottom: 0; }
+html[lang="ar"] .hero-description { padding-bottom: clamp(64px, 7.82vw, 105px); }
+
+@media (max-width: 1050px) {
+    html[lang="ar"] .hero-description { padding-bottom: clamp(64px, 8.4vw, 90px); }
+}
+@media (max-width: 760px) {
+    html[lang="ar"] .hero-description { padding-bottom: clamp(75px, 14.95vw, 105px); }
+}
+@media (max-width: 500px) {
+    html[lang="ar"] .hero-description { padding-bottom: clamp(67px, 17.25vw, 89px); }
+}
+
+span {
+    font-weight: 700;
+    color: white;
+}
+
+
+.project-link { cursor: pointer; }
+.project-link .project-link-arrow { color: var(--blue-hover); }
+.project-status-label { pointer-events: none; }
