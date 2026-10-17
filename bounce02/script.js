@@ -4,8 +4,8 @@ const translations = {
         'name.first': 'MOHAMMAD', 'name.last': 'ISSA', 'name.lastPeriod': 'Issa', 'name.fullUpper': 'MOHAMMAD ISSA',
         'nav.about': 'About me', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.hobbies': 'Hobbies', 'nav.contact': 'Contact',
         'theme.light': 'Light mode', 'theme.dark': 'Dark mode', 'theme.toLight': 'Switch to light theme', 'theme.toDark': 'Switch to dark theme',
-        'hero.eyebrow': 'ABOUT ME', 'hero.lead': 'Cybersecurity Graduate |', 'hero.certified': 'CCNA certified.',
-        'hero.description': 'I’m a Cybersecurity graduate from Al al-Bayt University with a CCNA certification. My main interests are networking, network security, and defensive cybersecurity. I’ve worked on hands-on labs to strengthen my technical knowledge, and I’m continuing to develop my skills through practical projects and ongoing learning.',
+        'hero.eyebrow': 'ABOUT ME', 'hero.lead': 'Cybersecurity |', 'hero.certified': 'CCNA certified.',
+        'hero.description': 'I hold a degree in Cybersecurity from Al al-Bayt University and a CCNA certification. My main interests are networking, network security, and defensive cybersecurity. I’ve worked on hands-on labs to strengthen my technical knowledge, and I’m continuing to develop my skills through practical projects and ongoing learning.',
         'hero.viewProjects': 'View projects', 'hero.contactMe': 'Contact me', 'hero.certification': 'CURRENT STATUS', 'hero.word' : 'SEEKING OPPORTUNITIES' , 'hero.basedIn': 'BASED IN', 'common.jordan': 'Jordan',
         'profile.image': 'PROFILE IMAGE', 'profile.alt': 'Profile illustration', 'profile.focus': 'CURRENT FOCUS', 'profile.focusValue': 'Networks & defensive security', 'profile.availability': 'OPEN TO LEARNING',
         'skills.explore': 'WHAT I EXPLORE', 'skills.learning': 'THINGS I’M LEARNING', 'skills.headingMain': 'Skills & ', 'skills.headingAccent': 'tools.',
@@ -36,14 +36,17 @@ const translations = {
         'form.success': 'Thanks, {name}. The form passed the browser-side checks, but this demo does not send messages.',
         'footer.summary': 'Networking · Cybersecurity · Web projects', 'footer.linkedin' : 'LinkedIn ↗' ,'footer.github': 'GITHUB ↗', 'footer.email': 'EMAIL ↗', 'footer.backToTop': 'top',
         'aria.navigation': 'Main navigation', 'aria.home': 'Mohammad Issa home', 'aria.facts': 'A few details', 'aria.profile': 'Profile photo and profile details',
-        'document.title': 'Mohammad Issa', 'document.description': 'Mohammad Issa — a personal portfolio about networking, cybersecurity, and small web projects.'
+        'document.title': 'Mohammad Issa', 'document.description': 'Mohammad Issa — a personal portfolio about networking, cybersecurity, and small web projects.',
+        'form.submit': 'Send via Email',
+        'form.note': 'Submitting opens your email app with the message ready to send.',
+        'form.success': 'Your email app should open with the message ready to send.',
     },
     ar: {
         'name.first': 'محمد', 'name.last': 'عيسى', 'name.lastPeriod': 'عيسى', 'name.fullUpper': 'محمد عيسى',
         'nav.about': 'نبذة عني', 'nav.skills': 'المهارات', 'nav.projects': 'المشاريع', 'nav.hobbies': 'اهتماماتي', 'nav.contact': 'تواصل',
         'theme.light': 'الوضع الفاتح', 'theme.dark': 'الوضع الداكن', 'theme.toLight': 'التبديل إلى الوضع الفاتح', 'theme.toDark': 'التبديل إلى الوضع الداكن',
-        'hero.eyebrow': 'نبذة عني', 'hero.lead': 'خريج أمن سيبراني | حاصل على شهادة CCNA', 'hero.certified': '',
-        'hero.description': 'أنا خريج الأمن السيبراني من جامعة آل البيت، وحاصل على شهادة CCNA. أهتم بمجال الشبكات وأمن الشبكات والأمن السيبراني الدفاعي. عملت في مختبرات عملية لتعزيز معرفتي التقنية، وأواصل تطوير مهاراتي من خلال المشاريع العملية والتعلّم المستمر.',
+        'hero.eyebrow': 'نبذة عني', 'hero.lead': ' أمن سيبراني | حاصل على شهادة CCNA', 'hero.certified': '',
+        'hero.description': ' أحمل درجة البكالوريوس في الأمن السيبراني من جامعة آل البيت، وحاصل على شهادة CCNA. أهتم بمجال الشبكات وأمن الشبكات والأمن السيبراني الدفاعي. عملت على مختبرات عملية لتعزيز معرفتي التقنية، وأواصل تطوير مهاراتي من خلال المشاريع العملية والتعلّم المستمر.',
         'hero.viewProjects': 'استعرض المشاريع', 'hero.contactMe': 'تواصل معي', 'hero.certification': 'الوضع الحالي', 'hero.word' : 'يبحث عن فرص' ,'hero.basedIn': 'الموقع', 'common.jordan': 'الأردن',
         'profile.image': 'الصورة الشخصية', 'profile.alt': 'رسم توضيحي للصورة الشخصية', 'profile.focus': 'مجال التركيز الحالي', 'profile.focusValue': 'الشبكات والأمن الدفاعي', 'profile.availability': 'مستعد للتعلّم',
         'skills.explore': 'ما أستكشفه', 'skills.learning': 'مواضيع أتعلّمها', 'skills.headingMain': 'المهارات و', 'skills.headingAccent': 'الأدوات.',
@@ -74,7 +77,10 @@ const translations = {
         'form.success': 'شكرًا {name}. اجتازت الرسالة التحقق داخل المتصفح، لكن هذا النموذج التجريبي لا يرسل الرسائل.',
         'footer.summary': 'الشبكات · الأمن السيبراني · مشاريع الويب', 'footer.linkedin' : 'LinkedIn ↗' ,'footer.github': 'GITHUB ↗', 'footer.email': 'البريد ↗', 'footer.backToTop': 'فوق',
         'aria.navigation': 'التنقّل الرئيسي', 'aria.home': 'الصفحة الرئيسية لمحمد عيسى', 'aria.facts': 'بعض المعلومات', 'aria.profile': 'الصورة الشخصية ومعلومات الملف',
-        'document.title': 'محمد عيسى', 'document.description': 'محمد عيسى — ملف شخصي عن الشبكات والأمن السيبراني ومشاريع الويب الصغيرة.'
+        'document.title': 'محمد عيسى', 'document.description': 'محمد عيسى — ملف شخصي عن الشبكات والأمن السيبراني ومشاريع الويب الصغيرة.',
+        'form.submit': 'إرسال عبر البريد الإلكتروني',
+        'form.note': 'سيُفتح تطبيق البريد والرسالة جاهزة، وعليك الضغط على إرسال لإتمام العملية.',
+        'form.success': 'تم تجهيز الرسالة لفتحها في تطبيق البريد وإرسالها.'
     }
 };
 
@@ -86,10 +92,12 @@ const themeLabel = document.querySelector('.theme-label');
 const contactForm = document.querySelector('#contact-form');
 const formFeedback = document.querySelector('#form-feedback');
 const currentYear = document.querySelector('#current-year');
+
 let currentLanguage = 'en';
 
 function applyLanguage(language) {
     currentLanguage = language;
+
     const dictionary = translations[language];
     const isArabic = language === 'ar';
 
@@ -98,34 +106,65 @@ function applyLanguage(language) {
 
     document.querySelectorAll('[data-i18n]').forEach((element) => {
         const key = element.dataset.i18n;
-        if (dictionary[key] !== undefined) element.textContent = dictionary[key];
+
+        if (dictionary[key] !== undefined) {
+            element.textContent = dictionary[key];
+        }
     });
+
     document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
         const key = element.dataset.i18nPlaceholder;
-        if (dictionary[key] !== undefined) element.setAttribute('placeholder', dictionary[key]);
+
+        if (dictionary[key] !== undefined) {
+            element.setAttribute('placeholder', dictionary[key]);
+        }
     });
+
     document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
         const key = element.dataset.i18nAria;
-        if (dictionary[key] !== undefined) element.setAttribute('aria-label', dictionary[key]);
+
+        if (dictionary[key] !== undefined) {
+            element.setAttribute('aria-label', dictionary[key]);
+        }
     });
+
     document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
         const key = element.dataset.i18nAlt;
-        if (dictionary[key] !== undefined) element.setAttribute('alt', dictionary[key]);
+
+        if (dictionary[key] !== undefined) {
+            element.setAttribute('alt', dictionary[key]);
+        }
     });
 
     document.title = dictionary['document.title'];
+
     const description = document.querySelector('meta[name="description"]');
-    if (description) description.setAttribute('content', dictionary['document.description']);
+
+    if (description) {
+        description.setAttribute('content', dictionary['document.description']);
+    }
 
     languageToggle.textContent = isArabic ? 'English' : 'العربية';
     languageToggle.setAttribute('lang', isArabic ? 'en' : 'ar');
-    languageToggle.setAttribute('aria-label', isArabic ? 'Switch language to English' : 'Switch language to Arabic');
+    languageToggle.setAttribute(
+        'aria-label',
+        isArabic ? 'Switch language to English' : 'Switch language to Arabic'
+    );
 
     const isLightTheme = root.dataset.theme === 'light';
-    themeLabel.textContent = isLightTheme ? dictionary['theme.dark'] : dictionary['theme.light'];
-    themeToggle.setAttribute('aria-label', isLightTheme ? dictionary['theme.toDark'] : dictionary['theme.toLight']);
 
-    if (formFeedback.textContent.trim()) formFeedback.textContent = '';
+    themeLabel.textContent = isLightTheme
+        ? dictionary['theme.dark']
+        : dictionary['theme.light'];
+
+    themeToggle.setAttribute(
+        'aria-label',
+        isLightTheme ? dictionary['theme.toDark'] : dictionary['theme.toLight']
+    );
+
+    if (formFeedback.textContent.trim()) {
+        formFeedback.textContent = '';
+    }
 }
 
 languageToggle.addEventListener('click', () => {
@@ -135,20 +174,62 @@ languageToggle.addEventListener('click', () => {
 themeToggle.addEventListener('click', () => {
     const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
     const isLightTheme = nextTheme === 'light';
+
     root.dataset.theme = nextTheme;
+
     themeToggle.setAttribute('aria-pressed', String(isLightTheme));
     themeIcon.textContent = isLightTheme ? '◑' : '◐';
+
     const dictionary = translations[currentLanguage];
-    themeLabel.textContent = isLightTheme ? dictionary['theme.dark'] : dictionary['theme.light'];
-    themeToggle.setAttribute('aria-label', isLightTheme ? dictionary['theme.toDark'] : dictionary['theme.toLight']);
+
+    themeLabel.textContent = isLightTheme
+        ? dictionary['theme.dark']
+        : dictionary['theme.light'];
+
+    themeToggle.setAttribute(
+        'aria-label',
+        isLightTheme ? dictionary['theme.toDark'] : dictionary['theme.toLight']
+    );
 });
+
 
 contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
+
     const name = document.querySelector('#name').value.trim();
-    formFeedback.textContent = translations[currentLanguage]['form.success'].replace('{name}', name);
-    contactForm.reset();
+    const senderEmail = document.querySelector('#email').value.trim();
+    const message = document.querySelector('#message').value.trim();
+
+    if (!name || !senderEmail || !message) {
+        formFeedback.textContent = currentLanguage === 'ar'
+            ? 'يرجى تعبئة جميع الحقول.'
+            : 'Please fill in all fields.';
+
+        return;
+    }
+
+    
+    const recipientEmail = 'mohammadhakeem917@gmail.com';
+
+    const subject = encodeURIComponent(
+        `Portfolio message from ${name}`
+    );
+
+    const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${senderEmail}\n\n` +
+        `Message:\n${message}`
+    );
+
+    const mailtoLink =
+        `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+
+    formFeedback.textContent =
+        translations[currentLanguage]['form.success'];
+
+    window.location.href = mailtoLink;
 });
 
 currentYear.textContent = new Date().getFullYear();
+
 applyLanguage('en');
