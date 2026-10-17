@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mohammad Issa — a personal portfolio about networking, cybersecurity, and small web projects.">
     <meta name="theme-color" content="#080b11">
-    <title>Mohammad Issa | Systems Console</title>
+    <title>Mohammad Issa</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -13,214 +13,220 @@
     <span id="top" class="page-top-anchor" aria-hidden="true"></span>
 
     <header class="site-header">
-        <nav class="navbar container" aria-label="Main navigation">
-            <a class="wordmark" href="#top" aria-label="Mohammad Issa home">
+        <nav class="navbar container" aria-label="Main navigation" data-i18n-aria="aria.navigation">
+            <a class="wordmark" href="#top" aria-label="Mohammad Issa home" data-i18n-aria="aria.home">
                 <span class="wordmark-kicker">PERSONAL SITE / JORDAN</span>
-                <span class="wordmark-name">MOHAMMAD <strong>ISSA</strong></span>
+                <span class="wordmark-name"><span data-i18n="name.first">MOHAMMAD</span> <strong data-i18n="name.last">ISSA</strong></span>
             </a>
 
             <div class="nav-links">
-                <a href="#about">About me</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#hobbies">Hobbies</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" data-i18n="nav.about">About me</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" data-i18n="nav.projects">Projects</a>
+                <a href="#hobbies" data-i18n="nav.hobbies">Hobbies</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
             </div>
 
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
-                <span class="theme-icon" aria-hidden="true">◐</span>
-                <span class="theme-label">Light mode</span>
-            </button>
+            <div class="nav-controls">
+                <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language to Arabic" lang="ar">العربية</button>
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
+                    <span class="theme-icon" aria-hidden="true">◐</span>
+                    <span class="theme-label" data-i18n="theme.light">Light mode</span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <!-- Required section: About Me with a photo -->
         <section class="hero container" id="about" aria-labelledby="hero-title">
             <div class="hero-copy">
-                <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> ABOUT ME <span class="eyebrow-divider">/</span> PROFILE 001</p>
-                <h1 id="hero-title">Mohammad<br><span>Issa.</span></h1>
-                <p class="hero-lead">Cybersecurity &amp; networking. <span>CCNA certified.</span></p>
-                <p class="hero-description">I like exploring how networks work, learning the basics of defensive security, and building small things for the web. This is a place to share what I’m practising and the projects I make along the way.</p>
+                <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> <span data-i18n="hero.eyebrow">ABOUT ME</span></p>
+                <h1 id="hero-title"><span class="hero-name-first" data-i18n="name.first">Mohammad</span><br><span data-i18n="name.lastPeriod">Issa</span></h1>
+                <p class="hero-lead"><span data-i18n="hero.lead">Cybersecurity | CCNA Certified</span> <span data-i18n="hero.certified">CCNA certified.</span></p>
+                <p class="hero-description" data-i18n="hero.description">I hold a degree in Cybersecurity from Al al-Bayt University and a CCNA certification. My main interests are networking, network security, and defensive cybersecurity. I’ve worked on hands-on labs to strengthen my technical knowledge, and I’m continuing to develop my skills through practical projects and ongoing learning.</p>
                 <div class="hero-actions">
-                    <a class="action-link action-primary" href="#projects">View projects <span aria-hidden="true">↘</span></a>
-                    <a class="action-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+                    <a class="action-link action-primary" href="#projects"><span data-i18n="hero.viewProjects">View projects</span> <span aria-hidden="true">↘</span></a>
+                    <a class="action-link" href="#contact"><span data-i18n="hero.contactMe">Contact me</span> <span aria-hidden="true">↗</span></a>
                 </div>
-                <div class="hero-facts" aria-label="A few details">
-                    <div><span>CERTIFICATION</span><strong>CCNA</strong></div>
-                    <div><span>BASED IN</span><strong>Jordan</strong></div>
+                <div class="hero-facts" aria-label="A few details" data-i18n-aria="aria.facts">
+                    <div><span data-i18n="hero.certification">CURRENT STATUS</span><strong data-i18n="hero.word">SEEKING OPPORTUNITIES</strong></div>
+                    <div><span data-i18n="hero.basedIn">BASED IN</span><strong data-i18n="common.jordan">Jordan</strong></div>
                 </div>
             </div>
 
-            <aside class="profile-panel" aria-label="Profile photo and profile details">
-                <div class="panel-topline"><span>PROFILE IMAGE</span><span>FIG. 01</span></div>
+            <aside class="profile-panel" aria-label="Profile photo and profile details" data-i18n-aria="aria.profile">
+                <div class="panel-topline"><span data-i18n="profile.image">PROFILE IMAGE</span></div>
                 <div class="portrait-frame">
                     <div class="portrait-grid" aria-hidden="true"></div>
-                    <img class="profile-image" src="assets/profile.jpg" alt="Profile photo" loading="eager">
-                    <span class="image-coordinate coordinate-top">31° 57′ N</span>
-                    <span class="image-coordinate coordinate-bottom">JORDAN / 001</span>
+                    <img class="profile-image" src="assets/profile.jpg" alt="Profile photo" data-i18n-alt="profile.alt" loading="eager">
                 </div>
                 <div class="profile-panel-footer">
-                    <div><span class="panel-label">CURRENT FOCUS</span><strong>Networks &amp; defensive security</strong></div>
-                    <span class="availability-mark"><i aria-hidden="true"></i> OPEN TO LEARNING</span>
+                    <div><span class="panel-label" data-i18n="profile.focus">CURRENT FOCUS</span><strong data-i18n="profile.focusValue">Networks &amp; defensive security</strong></div>
+                    <span class="availability-mark"><i aria-hidden="true"></i> <span data-i18n="profile.availability">OPEN TO LEARNING</span></span>
                 </div>
             </aside>
         </section>
 
-
-        <!-- Required section: Skills grid -->
         <section class="section container" id="skills" aria-labelledby="skills-heading">
             <div class="section-identity skills-identity">
                 <span class="section-number">01</span>
                 <span class="section-rule" aria-hidden="true"></span>
-                <span class="section-code">WHAT I EXPLORE</span>
-                <span class="eyebrow skills-eyebrow">THINGS I’M LEARNING</span>
+                <span class="section-code" data-i18n="skills.explore">WHAT I EXPLORE</span>
+                <span class="eyebrow skills-eyebrow" data-i18n="skills.learning">THINGS I’M LEARNING</span>
             </div>
             <div class="section-content">
                 <div class="section-heading-row">
-                    <div><h2 id="skills-heading">Skills &amp; <span>tools.</span></h2></div>
-                    <p class="section-summary">A few tools and topics I enjoy learning about and practising.</p>
+                    <div><h2 id="skills-heading"><span class="heading-main" data-i18n="skills.headingMain">Skills &amp; </span><span data-i18n="skills.headingAccent">tools.</span></h2></div>
+                    <p class="section-summary" data-i18n="skills.summary">A few tools and topics I enjoy learning about and practising.</p>
                 </div>
 
                 <div class="skills-grid">
                     <article class="skill-card">
                         <div class="skill-card-top"><span class="skill-index">SK / 01</span><span class="skill-symbol" aria-hidden="true">↔</span></div>
-                        <h3>Networking</h3>
-                        <p>Routing and switching, VLANs, IPv4 addressing, subnetting, and first-line network troubleshooting.</p>
-                        <div class="tag-list"><span>CCNA</span><span>TCP/IP</span><span>Packet Tracer</span></div>
+                        <h3 data-i18n="skills.networking">Networking</h3>
+                        <p data-i18n="skills.networkingDesc">Understanding how networks communicate, with a focus on routing, switching, VLANs, IPv4 addressing, subnetting, and basic network troubleshooting.</p>
+                        <div class="tag-list"><span>TCP/IP</span><span>VLANs</span><span>Packet Tracer</span></div>
                     </article>
                     <article class="skill-card">
                         <div class="skill-card-top"><span class="skill-index">SK / 02</span><span class="skill-symbol" aria-hidden="true">⌁</span></div>
-                        <h3>Cybersecurity</h3>
-                        <p>Security fundamentals, basic log analysis, introductory SIEM concepts, digital forensics fundamentals, and packet inspection.</p>
-                        <div class="tag-list"><span>TryHackMe</span><span>SIEM basics</span><span>Wireshark</span></div>
+                        <h3 data-i18n="skills.cybersecurity">Cybersecurity</h3>
+                        <p data-i18n="skills.cybersecurityDesc">Foundational knowledge of defensive cybersecurity, including log analysis, SIEM fundamentals, and packet analysis.</p>
+                        <div class="tag-list"><span>SIEM Fundamentals</span><span>Wireshark</span><span>Log Analysis</span></div>
                     </article>
                     <article class="skill-card">
                         <div class="skill-card-top"><span class="skill-index">SK / 03</span><span class="skill-symbol" aria-hidden="true">&lt;/&gt;</span></div>
-                        <h3>Web technologies</h3>
-                        <p>Building semantic pages, responsive layouts, and small browser interactions. Familiar with Python and Flask through a university project.</p>
-                        <div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python / Flask</span></div>
+                        <h3 data-i18n="skills.web">Programming &amp; Development</h3>
+                        <p data-i18n="skills.webDesc">Building semantic web pages and responsive layouts with HTML, CSS, and JavaScript. Familiar with Python, Flask, and machine learning through a university project.</p>
+                        <div class="tag-list"><span>HTML5</span><span>CSS</span><span>JavaScript</span><span>Python / Flask</span><span>Machine Learning</span></div>
                     </article>
                     <article class="skill-card">
                         <div class="skill-card-top"><span class="skill-index">SK / 04</span><span class="skill-symbol" aria-hidden="true">$_</span></div>
-                        <h3>Tools &amp; workflow</h3>
-                        <p>Using a Linux terminal, organising repositories, tracking changes, and documenting project work clearly.</p>
-                        <div class="tag-list"><span>Kali Linux</span><span>Git</span><span>GitHub</span></div>
+                        <h3 data-i18n="skills.tools">Operating Systems</h3>
+                        <p data-i18n="skills.toolsDesc">Working with Linux environments, navigating file systems, using command-line tools, and practising basic system operations.</p>
+                        <div class="tag-list"><span>Linux</span><span>Git</span><span>Command Line</span></div>
                     </article>
                 </div>
-                
             </div>
         </section>
 
-        <!-- Required section: Project Showcase including Projects 00–03 -->
         <section class="projects-section" id="projects" aria-labelledby="projects-heading">
             <div class="container section-layout">
                 <div class="section-identity">
                     <span class="section-number">02</span>
                     <span class="section-rule" aria-hidden="true"></span>
-                    <span class="section-code">THINGS I’VE MADE</span>
+                    <span class="section-code" data-i18n="projects.made">THINGS I’VE MADE</span>
                 </div>
                 <div class="section-content">
                     <div class="section-heading-row">
-                        <div><p class="eyebrow">A FEW SMALL BUILDS</p><h2 id="projects-heading">Projects <span>&amp; experiments.</span></h2></div>
-                        <p class="section-summary">Small projects and exercises from learning web development and working with Git.</p>
+                        <div><p class="eyebrow" data-i18n="projects.eyebrow">A FEW SMALL BUILDS</p><h2 id="projects-heading"><span data-i18n="projects.headingMain">Projects </span><span data-i18n="projects.headingAccent"></span></h2></div>
+                        <p class="section-summary" data-i18n="projects.summary">Small projects and exercises from learning web development and working with Git.</p>
                     </div>
                     <div class="project-grid">
                         <article class="project-card">
-                            <div class="project-card-top"><span class="project-index">00</span><span class="project-category">VERSION CONTROL</span></div>
-                            <h3>Git Foundations</h3>
-                            <p>Organised exercise folders, tracked work through commits, documented the repository, and pushed the required files to GitHub.</p>
-                            <div class="tag-list"><span>Git</span><span>GitHub</span><span>README</span></div>
+                            <div class="project-card-top"><span class="project-index">00</span><span class="project-category" data-i18n="project.gitCategory">VERSION CONTROL</span></div>
+                            <h3 data-i18n="project.gitTitle">Git Foundations</h3>
+                            <p data-i18n="project.gitDesc">Organised exercise folders, tracked work through commits, documented the repository, and pushed the required files to GitHub.</p>
+                            <div class="project-card-footer">
+                                <div class="tag-list"><span>Git</span><span>GitHub</span><span>Linux</span></div>
+                                <a class="project-link" href="https://github.com/mohammadissa02/discovery-web-piscine-submission" target="_blank" rel="noopener noreferrer" data-i18n-aria="project.gitOpen" aria-label="Open Git Foundations repository"><span class="project-link-label-en">View repository</span><span class="project-link-label-ar" lang="ar" dir="rtl">فتح المستودع</span><span class="project-link-arrow" aria-hidden="true">↗</span></a>
+                            </div>
                         </article>
                         <article class="project-card">
-                            <div class="project-card-top"><span class="project-index">01</span><span class="project-category">HTML STRUCTURE</span></div>
-                            <h3>HTML5 Fundamentals</h3>
-                            <p>Built pages with semantic elements, clear heading hierarchy, links, lists, tables, images, and form controls.</p>
-                            <div class="tag-list"><span>HTML5</span><span>Semantics</span><span>Forms</span></div>
+                            <div class="project-card-top"><span class="project-index">01</span><span class="project-category" data-i18n="project.htmlCategory">HTML STRUCTURE</span></div>
+                            <h3 data-i18n="project.htmlTitle">HTML5 Fundamentals</h3>
+                            <p data-i18n="project.htmlDesc">Built pages with semantic elements, clear heading hierarchy, links, lists, tables, images, and form controls.</p>
+                            <div class="project-card-footer">
+                                <div class="tag-list"><span>HTML5</span><span>Semantics</span><span>Forms</span></div>
+                                <a class="project-link" href="https://github.com/mohammadissa02/Project-01-HTML-Fundamentals" target="_blank" rel="noopener noreferrer" data-i18n-aria="project.htmlOpen" aria-label="Open HTML5 Fundamentals repository"><span class="project-link-label-en">View repository</span><span class="project-link-label-ar" lang="ar" dir="rtl">فتح المستودع</span><span class="project-link-arrow" aria-hidden="true">↗</span></a>
+                            </div>
                         </article>
                         <article class="project-card">
-                            <div class="project-card-top"><span class="project-index">02</span><span class="project-category">LAYOUT &amp; DESIGN</span></div>
-                            <h3>CSS Layout Lab</h3>
-                            <p>Practised Flexbox, positioning, the box model, colors, shapes, responsive layouts, and hover interactions.</p>
-                            <div class="tag-list"><span>CSS3</span><span>Flexbox</span><span>Media queries</span></div>
+                            <div class="project-card-top"><span class="project-index">02</span><span class="project-category" data-i18n="project.cssCategory">LAYOUT &amp; DESIGN</span></div>
+                            <h3 data-i18n="project.cssTitle">CSS Layout Lab</h3>
+                            <p data-i18n="project.cssDesc">Practised Flexbox, positioning, the box model, colors, shapes, responsive layouts, and hover interactions.</p>
+                            <div class="project-card-footer">
+                                <div class="tag-list"><span>CSS</span><span>Flexbox</span><span>Responsive Design</span></div>
+                                <a class="project-link" href="https://github.com/mohammadissa02/Project-02-CSS-Visual-Presentation" target="_blank" rel="noopener noreferrer" data-i18n-aria="project.cssOpen" aria-label="Open CSS Layout Lab repository"><span class="project-link-label-en">View repository</span><span class="project-link-label-ar" lang="ar" dir="rtl">فتح المستودع</span><span class="project-link-arrow" aria-hidden="true">↗</span></a>
+                            </div>
                         </article>
                         <article class="project-card">
-                            <div class="project-card-top"><span class="project-index">03</span><span class="project-category">INTERACTION</span></div>
-                            <h3>JavaScript Basics</h3>
-                            <p>Worked with variables and types, console output, click events, event listeners, and simple DOM updates.</p>
-                            <div class="tag-list"><span>JavaScript</span><span>DOM</span><span>Events</span></div>
+                            <div class="project-card-top"><span class="project-index">03</span><span class="project-category" data-i18n="project.jsCategory">INTERACTION</span></div>
+                            <h3 data-i18n="project.jsTitle">JavaScript Basics</h3>
+                            <p data-i18n="project.jsDesc">Worked with variables and types, console output, click events, event listeners, and simple DOM updates.</p>
+                            <div class="project-card-footer">
+                                <div class="tag-list"><span>JavaScript</span><span>DOM</span><span>Event Listeners</span></div>
+                                <a class="project-link" href="https://github.com/mohammadissa02/Project-03-JavaScript-Interactivity" target="_blank" rel="noopener noreferrer" data-i18n-aria="project.jsOpen" aria-label="Open JavaScript Basics repository"><span class="project-link-label-en">View repository</span><span class="project-link-label-ar" lang="ar" dir="rtl">فتح المستودع</span><span class="project-link-arrow" aria-hidden="true">↗</span></a>
+                            </div>
                         </article>
                         <article class="project-card project-card-featured" id="phishguard">
-                            <div class="project-card-top"><span class="project-index">04</span><span class="project-category">FEATURED · SECURITY</span></div>
-                            <h3>PhishGuard<span class="project-title-dot">.</span></h3>
-                            <p>A university project exploring phishing detection in a Flask web app. Machine-learning models assess suspicious URLs and email content, with login and report-summary features.</p>
-                            <div class="tag-list"><span>Python</span><span>Flask</span><span>Machine Learning</span></div>
-                            <a class="project-card-link" href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+                            <div class="project-card-top"><span class="project-index">04</span><span class="project-category" data-i18n="project.phishCategory">FEATURED · SECURITY</span></div>
+                            <h3><span data-i18n="project.phishTitle">PhishGuard</span><span class="project-title-dot">.</span></h3>
+                            <p data-i18n="project.phishDesc">A university project exploring phishing detection in a Flask web app. Machine-learning models assess suspicious URLs and email content, with login and report-summary features.</p>
+                            <div class="project-card-footer">
+                                <div class="tag-list"><span>Python</span><span>Flask</span><span>Machine Learning</span></div>
+                                <span class="project-status-label" role="status"><span class="project-status-label-en">Under Refinement</span><span class="project-status-label-ar" lang="ar" dir="rtl">قيد التطوير</span></span>
+                            </div>
                         </article>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Required section: Hobbies -->
         <section class="section hobbies-section" id="hobbies" aria-labelledby="hobbies-heading">
             <div class="container section-layout">
                 <div class="section-identity">
                     <span class="section-number">03</span>
                     <span class="section-rule" aria-hidden="true"></span>
-                    <span class="section-code">OFF THE CHECKLIST</span>
+                    <span class="section-code" data-i18n="hobbies.code">OFF THE CLOCK</span>
                 </div>
                 <div class="section-content">
                     <div class="section-heading-row">
-                        <div><p class="eyebrow">OUTSIDE THE CHECKLIST</p><h2 id="hobbies-heading">What I enjoy <span>exploring.</span></h2></div>
-                        <p class="section-summary">A few things I come back to when I want to learn or try something new.</p>
+                        <div><p class="eyebrow" data-i18n="hobbies.eyebrow">OFF THE CLOCK</p><h2 id="hobbies-heading"><span data-i18n="hobbies.headingMain">Hobbies &amp; Interests </span><span data-i18n="hobbies.headingAccent">exploring.</span></h2></div>
+                        <p class="section-summary" data-i18n="hobbies.summary">A few things I enjoy and personal interests I’d like to pursue.</p>
                     </div>
                     <div class="hobbies-list">
-                        <article class="hobby-row"><span class="hobby-index">H / 01</span><div><h3>Cybersecurity learning labs</h3><p>Revisiting security fundamentals, working through structured exercises, and learning how to read logs and network traffic.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
-                        <article class="hobby-row"><span class="hobby-index">H / 02</span><div><h3>Network configuration &amp; troubleshooting</h3><p>Reviewing CCNA topics and using lab scenarios to understand how addressing, routing, and switching fit together.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
-                        <article class="hobby-row"><span class="hobby-index">H / 03</span><div><h3>Building small web projects</h3><p>Practising HTML, CSS, and JavaScript, then improving a page based on what I learn.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
+                        <article class="hobby-row"><span class="hobby-index">H / 01</span><div><h3 data-i18n="hobbies.labTitle">Football</h3><p data-i18n="hobbies.labDesc">Enjoying the game, the competition, and the excitement of football.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
+                        <article class="hobby-row"><span class="hobby-index">H / 02</span><div><h3 data-i18n="hobbies.networkTitle">Reading</h3><p data-i18n="hobbies.networkDesc">Enjoying reading to deepen my knowledge and understanding of important subjects.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
+                        <article class="hobby-row"><span class="hobby-index">H / 03</span><div><h3 data-i18n="hobbies.webTitle">Horse Riding</h3><p data-i18n="hobbies.webDesc">A personal goal of mine is to become a skilled horse rider someday.</p></div><span class="hobby-arrow" aria-hidden="true">↗</span></article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Required section: Contact Form -->
         <section class="contact-section" id="contact" aria-labelledby="contact-heading">
             <div class="container contact-layout">
                 <div class="contact-copy">
-                    <div class="section-identity contact-identity"><span class="section-number">04</span><span class="section-rule" aria-hidden="true"></span><span class="section-code">CONTACT</span></div>
-                    <p class="eyebrow">GET IN TOUCH</p>
-                    <h2 id="contact-heading">Let’s talk<br><span>technical work.</span></h2>
-                    <p>Have a question, an idea, or want to talk about technology? Feel free to reach out.</p>
-                    <a class="contact-link" href="mailto:your.email@example.com">your.email@example.com <span aria-hidden="true">↗</span></a>
-                    <a class="contact-link" href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer">github.com/mohammadissa02 <span aria-hidden="true">↗</span></a>
-                    <p class="replace-note">Remember to replace the example email before publishing.</p>
+                    <div class="section-identity contact-identity"><span class="section-number">04</span><span class="section-rule" aria-hidden="true"></span><span class="section-code" data-i18n="contact.code">CONTACT</span></div>
+                    <p class="eyebrow" data-i18n="contact.eyebrow">GET IN TOUCH</p>
+                    <h2 id="contact-heading"><span data-i18n="contact.headingMain">Let’s talk</span><br><span data-i18n="contact.headingAccent">technical work.</span></h2>
+                    <p data-i18n="contact.description">Have a question, an idea, or want to talk about technology? Feel free to reach out.</p>
+                    <a class="contact-link" href="mailto:mohammadhakeem917@gmail.com"><span data-i18n="contact.email">My Email</span><span aria-hidden="true">↗</span></a>
+                    <a class="contact-link" href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer"><span data-i18n="contact.github">My GitHub</span><span aria-hidden="true">↗</span></a>
+                    <a class="contact-link" href="https://www.linkedin.com/in/mohammad-issa-m17" target="_blank" rel="noopener noreferrer"><span data-i18n="contact.linkedin">My LinkedIn</span><span aria-hidden="true">↗</span></a>
                 </div>
 
                 <form class="contact-form" id="contact-form">
-                    <div class="form-header"><span>MESSAGE FORM / 001</span><span class="demo-status"><i aria-hidden="true"></i> FRONT-END DEMO</span></div>
-                    <div class="form-field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required minlength="2"></div>
-                    <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
-                    <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="10"></textarea></div>
-                    <button class="submit-button" type="submit">Check message <span aria-hidden="true">↗</span></button>
+                    <div class="form-header"><span data-i18n="form.header">MESSAGE FORM / 001</span><span class="demo-status"><i aria-hidden="true"></i></span></div>
+                    <div class="form-field"><label for="name" data-i18n="form.name">Name</label><input id="name" name="name" type="text" placeholder="Your name" data-i18n-placeholder="form.namePlaceholder" autocomplete="name" required minlength="2"></div>
+                    <div class="form-field"><label for="email" data-i18n="form.email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" data-i18n-placeholder="form.emailPlaceholder" autocomplete="email" required></div>
+                    <div class="form-field"><label for="message" data-i18n="form.message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message here..." data-i18n-placeholder="form.messagePlaceholder" required minlength="10"></textarea></div>
+                    <button class="submit-button" type="submit"><span data-i18n="form.submit">Check message</span> <span aria-hidden="true">↗</span></button>
                     <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-                    <p class="form-note">The form checks your inputs in the browser. It does not send or store messages.</p>
+                    <p class="form-note" data-i18n="form.note">The form checks your inputs in the browser. It does not send or store messages.</p>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Required section: Footer -->
     <footer class="site-footer">
         <div class="container footer-main">
-            <a class="footer-wordmark" href="#top">MOHAMMAD <strong>ISSA</strong></a>
-            <p>Networking · Cybersecurity · Web projects</p>
-            <div class="footer-links"><a href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="mailto:your.email@example.com">EMAIL ↗</a></div>
+            <a class="footer-wordmark" href="#top"><span data-i18n="name.first">MOHAMMAD</span> <strong data-i18n="name.last">ISSA</strong></a>
+            <p data-i18n="footer.summary">Networking · Cybersecurity · Web projects</p>
+            <div class="footer-links"><a href="https://www.linkedin.com/in/mohammad-issa-m17" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin">LinkedIn ↗</a><a href="https://github.com/mohammadissa02" target="_blank" rel="noopener noreferrer" data-i18n="footer.github">GITHUB ↗</a><a href="mailto:mohammadhakeem917@gmail.com" data-i18n="footer.email">EMAIL ↗</a></div>
         </div>
         <div class="container footer-bottom">
-            <p>© <span id="current-year">2026</span> MOHAMMAD ISSA</p>
-            <a class="back-to-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+            <p>© <span id="current-year">2026</span> <span data-i18n="name.fullUpper">MOHAMMAD ISSA</span></p>
+            <a class="back-to-top" href="#top"><span data-i18n="footer.backToTop"></span> <span aria-hidden="true">↑</span></a>
         </div>
     </footer>
 </body>
