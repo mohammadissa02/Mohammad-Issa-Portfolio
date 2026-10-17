@@ -15,7 +15,6 @@
     --grid-line: rgba(100, 132, 176, 0.045);
     --shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
 }
-
 :root[data-theme="light"] {
     color-scheme: light;
     --page: #e9eef5;
