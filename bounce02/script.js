@@ -111,7 +111,6 @@ function applyLanguage(language) {
             element.textContent = dictionary[key];
         }
     });
-
     document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
         const key = element.dataset.i18nPlaceholder;
 
